@@ -4,6 +4,7 @@
 //Profesora Marta Bella
 //noviembre 2024
 
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Random;
 
@@ -177,6 +178,14 @@ public class HernandezClaudiaEjercicio1 {
                             System.out.println("Game over! Ya no queda nada que explotar.");
                             seleccionUsuario = 0;
                         }
+
+                        //Reto ranking de explosiones. Uso un arraylist porque necesito que deje ir introduciendo datos nuevos sin tener cantidad fija
+                        ArrayList <Integer> boomArraylist = new ArrayList<>();
+                        boomArraylist.add(calculoBoom);
+                        for (int i=0; i<boomArraylist.size(); i++){
+                            System.out.println("Tu rankin es: " + boomArraylist.get(i));
+                        }
+
                         break;
 
                     // Mostrar matriz
