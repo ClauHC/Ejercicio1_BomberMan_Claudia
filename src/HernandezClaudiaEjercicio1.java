@@ -7,6 +7,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Random;
+//import java.util.Collections;
 
 public class HernandezClaudiaEjercicio1 {
     public static void main(String[] args) {
@@ -184,6 +185,7 @@ public class HernandezClaudiaEjercicio1 {
 
                         //Reto ranking de explosiones. Recoger y guardar todas las explosiones y que se impriman en orden.
                         boomArraylist.add(calculoBoom);
+                        //Collections.sort(boomArraylist, Collections.reverseOrder());
                         System.out.println("Tu rankin es: ");
                         for (int i = 0; i < boomArraylist.size(); i++){
                             System.out.println((i + 1) + ". " + boomArraylist.get(i) + " puntos");
