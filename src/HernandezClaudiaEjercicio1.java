@@ -88,6 +88,9 @@ public class HernandezClaudiaEjercicio1 {
 
         int seleccionUsuario;
 
+        //Reto ranking de explosiones. Uso un arraylist porque necesito que deje ir introduciendo datos nuevos sin tener cantidad fija.
+        ArrayList <Integer> boomArraylist = new ArrayList<>();
+
         do {
             // menú de opciones
             System.out.println("¿Qué quieres hacer?");
@@ -179,11 +182,11 @@ public class HernandezClaudiaEjercicio1 {
                             seleccionUsuario = 0;
                         }
 
-                        //Reto ranking de explosiones. Uso un arraylist porque necesito que deje ir introduciendo datos nuevos sin tener cantidad fija
-                        ArrayList <Integer> boomArraylist = new ArrayList<>();
+                        //Reto ranking de explosiones. Recoger y guardar todas las explosiones y que se impriman en orden.
                         boomArraylist.add(calculoBoom);
-                        for (int i=0; i<boomArraylist.size(); i++){
-                            System.out.println("Tu rankin es: " + boomArraylist.get(i));
+                        System.out.println("Tu rankin es: ");
+                        for (int i = 0; i < boomArraylist.size(); i++){
+                            System.out.println((i + 1) + ". " + boomArraylist.get(i) + " puntos");
                         }
 
                         break;
