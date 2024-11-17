@@ -1,1 +1,11 @@
-Descripción de mi proyecto
+First class project for Structured Programming with JAVA language. Bomber Man!
+
+Description:
+
+A Java program that asks the user via console for two integer numbers (rows, columns) that will represent the rows and columns that the game field will have. If the user chooses an invalid value, it will indicate that this value is incorrect and will ask for the information again. 
+
+When the matrix has been generated, the user is presented with the following menu of options
+    [2] Set bomb
+    [1] Show matrix
+    [0] Exit
+The user can choose 2 if they want to provide coordinates for the bomb, 1 if they want to see the contents of the array, or 0 if they want to exit the program. If the user chooses any other value (including a non-numeric value), the user will be told that this option does not exist and the menu will be shown again.

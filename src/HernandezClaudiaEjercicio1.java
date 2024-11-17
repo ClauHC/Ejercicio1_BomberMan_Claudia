@@ -41,7 +41,7 @@ public class HernandezClaudiaEjercicio1 {
 
         do {
             System.out.println("Ahora introduce el número de columnas que quieras. Nuevamente tiene que ser un número entero, diferente de cero, positivo y no mayor " + MAYOR);
-            if (input.hasNextInt()){
+                if (input.hasNextInt()){
                 columnas = input.nextInt();
                 input.nextLine();
                 if (columnas < MENOR || columnas > MAYOR) {
